@@ -1,14 +1,15 @@
-div.container {
+.container {
     width:100%;
     overflow:auto;
     padding: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 53% 50% 33%;
   }
 
   .container div 
   {
     padding: 5px;
-    width: 40%;
+    width: 30%;
     display: inline-block;
     
   }
