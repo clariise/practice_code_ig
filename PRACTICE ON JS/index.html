@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi Elaine</title>
+  </head>
+  <body>
+    <h1>Practice using Javacript</h1>
+    <p>The length of a string is:</p>
+    <p id="demo"></p>
+
+    <p id="demo2">Change my color into RED</p>
+    <button onclick="document.getElementById('demo2').style.color = 'red'">
+      Press Me
+    </button>
+
+    <button onclick="document.getElementById('demo1').innerHTML= 'Hello World'">
+      Click Me
+    </button>
+    <p id="demo1"></p>
+    <script>
+      let text = "AHDGENHDBCDJCSKSJDXCJSK";
+      document.getElementById("demo").innerHTML = text.length;
+    </script>
+  </body>
+</html>
