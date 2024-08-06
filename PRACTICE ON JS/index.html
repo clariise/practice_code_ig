@@ -19,9 +19,56 @@
       Click Me
     </button>
     <p id="demo1"></p>
+
+    <p id="demo3"></p>
+
+    <p id="demo4"></p>
+
     <script>
+      //method .length
       let text = "AHDGENHDBCDJCSKSJDXCJSK";
       document.getElementById("demo").innerHTML = text.length;
+
+      //Iterable
+      //for of method
+
+      //(forEach method)
+      const numbers = [28, 46, 834, 92];
+
+      let txt = "";
+      numbers.forEach(myFunction);
+      document.getElementById("demo3").innerHTML = txt;
+
+      function myFunction(value, index, array) {
+        txt += value + "<br>";
+      }
+
+      //error handling using try catch statement
+      //if we have typo or syntax
+      try {
+        //block of code that may or may not result an  error
+      } catch (
+        err // Contains the code that will run if an error occurs in the try block
+
+        //executed
+      ) {}
+
+      //Function sequence
+
+      function myDisplayer(some) {
+        document.getElementById("demo4").innerHTML = some;
+      }
+
+      function myFirst() {
+        myDisplayer("Hello");
+      }
+
+      function mySecond() {
+        myDisplayer("GoodBye");
+      }
+
+      mySecond();
+      myFirst();
     </script>
   </body>
 </html>
