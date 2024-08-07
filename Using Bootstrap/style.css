@@ -1,3 +1,14 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
 .profile-img {
   max-width: 100%;
   height: auto;
@@ -10,31 +21,7 @@
   height: 100%;
 }
 
-body.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.dark-mode .navbar-light {
-  background-color: #1e1e1e;
-}
-
-.dark-mode .btn-dark {
-  background-color: #333;
-  border-color: #333;
-}
-
-.dark-mode h1,
-.dark-mode h2,
-.dark-mode h3,
-.dark-mode h4 {
-  color: #ffffff;
-}
-
-.dark-mode a {
-  color: #ffffff;
-}
-
-.dark-mode .profile-img {
-  filter: brightness(0.8);
+.dark-mode {
+  background-color: black;
+  color: white;
 }
