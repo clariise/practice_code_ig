@@ -51,3 +51,73 @@ console.log(z); // output: 5
 
 let s = Math.sqrt(9); //method to get the square root of a number
 console.log(s); //output: 3
+
+// JS Comparison
+//TRUE:
+x = 10;
+y = 5;
+alert(x > y); //when x is GREATER than y
+alert(x != y); //when x is NOT EQUAL than y
+
+x = 10;
+y = 10;
+alert(x == y); //when x is EQUAL than y
+
+//conditional (ternary) operator
+
+var age = 15;
+var voteable = age < 18 ? "Too young" : "Old enough"; //Syntax: condition ? <expression if true> : <expression if false>
+//"Too young" if (?) age is less than 18, otherwise(:) alert "Old enough".
+
+alert(voteable);
+
+//JS Condition
+
+let a = 19;
+let b = 15;
+if (a > b) {
+  console.log("Hello World"); //if statement
+} else {
+  console.log("Error"); //else statement
+}
+
+//JS Switch
+
+switch (
+  "Ampalaya" //select one of many code blocks to be executed.
+) {
+  case "Ampalaya":
+    alert("Hello"); //returns when switch is "Ampalaya"
+    break;
+
+  case "Squash":
+    alert("Welcome"); //returns when switch is "Squash"
+    break;
+
+  default:
+    alert("Neither"); // returns when switch is "default" If no matching cases are found, the program continues to the default label.
+    break;
+}
+
+//JS Loops
+//Create a loop that runs from 0 to 9.
+let i;
+for (i = 0; i <= 10; i++) {
+  console.log(i); //from 0 to 10
+}
+
+//reverse count from 1-10
+
+let p;
+for (p = 10; p > 0; p--) {
+  console.log(p); // starts to 10 ends 1
+}
+
+//of object
+//Create a loop that runs through each item in the fruits array.
+//const fruits = ["Apple", "Banana", "Orange"];
+for (x of fruits) {
+  console.log(x); //Apple
+  // Banana
+  // Orange
+}
