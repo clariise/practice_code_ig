@@ -110,6 +110,7 @@ for (i = 0; i <= 10; i++) {
 
 let p;
 for (p = 10; p > 0; p--) {
+  // for (initialization, condition, inc/decr)
   console.log(p); // starts to 10 ends 1
 }
 
@@ -121,3 +122,41 @@ for (x of fruits) {
   // Banana
   // Orange
 }
+
+//JS while loop
+//counts 1-10 using while loop
+
+let k = 0; //initialization
+while (k <= 10) {
+  //condition
+  console.log(k); //code of block
+  k++; //incr
+}
+
+//Create a loop that runs as long as i is less than 10, but increase i with 2 each time.
+
+let v = 0;
+while (v <= 10) {
+  console.log(v);
+  v = v + 2; //you can also write like this v +=2
+}
+
+// JS Break Loop
+//Break
+for (f = 0; f < 10; f++) {
+  console.log(f);
+  if (f == 5) {
+    break; // Make the loop stop when f is 5.
+  }
+}
+
+//continue
+for (f = 0; f < 10; f++) {
+  if (f == 5) {
+    continue; // jump to the next iteration
+  }
+  console.log(f);
+}
+
+// JS HTML DOM
+document.getElementById("demo9").innerHTML = "I'am happy to see you ";
