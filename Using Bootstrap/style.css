@@ -2,6 +2,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Styles for small screens */
 @media only screen and (max-width: 600px) {
   body {
     padding: 25px;
@@ -11,11 +12,14 @@
   }
 }
 
+/* Profile image styling */
 .profile-img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
 }
+
+/* Content wrapper styling */
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -23,7 +27,12 @@
   height: 100%;
 }
 
+/* Dark mode styling */
 .dark-mode {
   background-color: black;
   color: white;
+}
+
+.rowcrt{
+  ga
 }
