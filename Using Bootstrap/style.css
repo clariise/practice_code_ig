@@ -12,6 +12,7 @@
   }
 }
 
+
 /* Profile image styling */
 .profile-img {
   max-width: 100%;
@@ -33,6 +34,45 @@
   color: white;
 }
 
-.rowcrt{
-  ga
+/* Style the columns to be more responsive */
+.col-md-2 {
+  flex: 0 0 auto;
+  width: 100%; /* Make columns full width by default */
+}
+
+@media (min-width: 768px) {
+  .col-md-2 {
+    width: 48%; /* Two columns per row on iPad-sized devices */
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-2 {
+    width: 18%; /* Five columns per row on larger screens */
+  }
+}
+
+/* Image styling */
+.imgLogo {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center images within the columns */
+}
+
+.shadow {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  /* Hide the original social links section in the header for mobile */
+  .container .row > .col-12.col-md-2.order-3.order-md-3 {
+    display: none;
+  }
 }
