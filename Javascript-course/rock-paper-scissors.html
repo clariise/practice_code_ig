@@ -8,42 +8,77 @@
 <body>
   <h1>Rock Paper Scissors</h1>
 
-  <button onclick="
-  const randomNumber = Math.random();
-  const computerMove ='';
+  <button onclick="pickComputerMove ();
 
-  //we use less than 1/3, 2/3 and 1 to avoid overlapping
+      //compare moves to get the result
+      let result ='';
+      
+      if (computerMove === 'rock') {
+        result = 'Tie.';
+      }else if (computerMove ==='paper'){
+        result = 'You lose.';
+      }else if (computerMove === 'scissors') {
+        result = 'You Win.';
+      }
 
-  //computer randomly select a move
-  if (randomNumber >= 0 && randomNumber < 1 / 3)  {
-    computerMove= 'Rock';
-  }else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-    computerMove= 'Paper';
-  }else if (randomNumber >= 2 / 3 && randomNumber < 1){
-    computerMove= 'Scissors';
-  }
-
-  console.log ('computerMove');
-
-  //compare moves to get the result
-  let result ='';
-
-  if (computerMove === 'rock') {
-    console.log('You are tie');
-  }else if (computerMove ==='Paper'){
-    console.log ('You lose');
-  }else if (computerMove === 'Scissors') {
-    console.log ('You Win.')
-  }
+  //Display the result in a pop up:
+      alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
   ">Rock</button>
 
 
-  <button>Paper</button>
+  <button onclick="pickComputerMove();
+
+      //compare moves to get the result
+      let result ='';
+      
+      if (computerMove === 'rock') {
+        result = 'You win.';
+      }else if (computerMove ==='paper'){
+        result = 'Tie.';
+      }else if (computerMove === 'scissors') {
+        result = 'You lose.';
+      }
+
+      //Display the result in a pop up:
+      alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+  ">Paper</button>
 
 
-  <button>Scisssors</button>
+  <button onclick=" pickComputerMove();
+
+      //compare moves to get the result
+      let result ='';
+      
+      if (computerMove === 'rock') {
+        result = 'You lose.';
+      }else if (computerMove ==='paper'){
+        result = 'You win.';
+      }else if (computerMove === 'scissors') {
+        result = 'Tie.';
+      }
+
+      //Display the result in a pop up:
+      alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+"
+  >Scisssors</button>
 
 <script>  
+let computerMove ='';
+
+function pickComputerMove (){
+  const randomNumber = Math.random();
+      //we use less than 1/3, 2/3 and 1 to avoid overlapping
+
+      //computer randomly select a move
+      if (randomNumber >= 0 && randomNumber < 1 / 3)  {
+        computerMove= 'rock';
+      }else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+        computerMove= 'paper';
+      }else if (randomNumber >= 2 / 3 && randomNumber < 1){
+        computerMove= 'scissors';
+      }
+
+}
 
 </script>
  
