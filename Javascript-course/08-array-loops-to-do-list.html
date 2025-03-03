@@ -4,19 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-do List | Arrays and loops</title>
+    <link rel="stylesheet" href="css/08-arrays-loops-todo-list.css" />
   </head>
   <body>
     <p>Todo List Practice 1</p>
-    <input type="text" placeholder="Todo name" class="js-name-input" />
-    <button
-      onclick="
+
+    <div class="todo-input-grid">
+      <input
+        type="text"
+        placeholder="Todo name"
+        class="js-name-input name-input"
+      />
+      <!-- date selector -->
+      <input type="date" class="js-due-date-input due-date-input" />
+
+      <button
+        class="add-todo-button"
+        onclick="
   addTodo();
 "
-    >
-      Add
-    </button>
+      >
+        Add
+      </button>
+    </div>
 
-    <div class="js-todo-list"></div>
+    <div class="js-todo-list todo-grid"></div>
 
     <script src="scripts/08-array-loops-todo-list.js"></script>
   </body>
