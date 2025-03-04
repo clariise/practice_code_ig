@@ -14,7 +14,7 @@ renderTodoList();
 function renderTodoList() {
   let todoListHTML = "";
 
-  todoList.forEach(function (todoObject, index) {
+  todoList.forEach((todoObject, index) => {
     const { name, dueDate } = todoObject; //destructuring
     const html = `
     <div>${name} </div>
