@@ -30,3 +30,9 @@ console.log((25 * 9) / 5 + 32);
 console.log(((86 - 32) * 5) / 9);
 
 console.log((-5 * 9) / 5 + 32);
+
+alert(`Total cost: $${5 + 3}`); //template literals and interpolation
+
+//mulyi-line strings
+alert(`Total cost: $ ${(599 + 295) / 100}
+Keep Learning!!`);
