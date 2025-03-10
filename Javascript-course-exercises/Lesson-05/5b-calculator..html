@@ -9,7 +9,7 @@
   <body>
     <div>
       <p>Calculator</p>
-      <input type="text" />
+      <input type="text" id="display" />
     </div>
     <br />
 
@@ -17,7 +17,7 @@
       <button
         onclick="
         calculation +=1;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         1
@@ -25,7 +25,7 @@
       <button
         onclick="
         calculation +=2;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         2
@@ -34,7 +34,7 @@
       <button
         onclick="
         calculation +=3;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         3
@@ -43,7 +43,7 @@
       <button
         onclick="
         calculation = calculation + '+';
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         +
@@ -54,7 +54,7 @@
       <button
         onclick="
         calculation +=4;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         4
@@ -62,7 +62,7 @@
       <button
         onclick="
         calculation +=5;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         5
@@ -70,7 +70,7 @@
       <button
         onclick="
         calculation +=6;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         6
@@ -78,7 +78,7 @@
       <button
         onclick="
       calculation = calculation + '-';
-      console.log(calculation);
+      document.getElementById('display').value = calculation;
       "
       >
         -
@@ -89,7 +89,7 @@
       <button
         onclick="
         calculation +=7;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         7
@@ -97,7 +97,7 @@
       <button
         onclick="
         calculation +=8;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         8
@@ -105,7 +105,7 @@
       <button
         onclick="
         calculation +=9;
-        console.log(calculation);
+        document.getElementById('display').value = calculation;
         "
       >
         9
@@ -113,7 +113,7 @@
       <button
         onclick="
       calculation = calculation + '*';
-      console.log(calculation);
+      document.getElementById('display').value = calculation;
       "
       >
         *
@@ -124,7 +124,7 @@
       <button
         onclick="
       calculation = calculation + '0';
-      console.log(calculation);
+      document.getElementById('display').value = calculation;
       "
       >
         0
@@ -132,7 +132,7 @@
       <button
         onclick="
       calculation = calculation + '.';
-      console.log(calculation);
+      document.getElementById('display').value = calculation;
       "
       >
         .
@@ -140,7 +140,7 @@
       <button
         onclick="
       calculation = eval(calculation);
-      console.log(calculation);
+      document.getElementById('display').value = calculation;
       "
       >
         =
@@ -148,7 +148,7 @@
       <button
         onclick="
       calculation = calculation + '/';
-      console.log(calculation);
+      document.getElementById('display').value = calculation;
       "
       >
         /
@@ -160,7 +160,8 @@
       <button
         onclick="
         calculation=''
-        console.log('cleared')"
+        document.getElementById('display').value = '';
+      "
       >
         Clear
       </button>
