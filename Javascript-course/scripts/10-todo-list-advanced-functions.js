@@ -1,13 +1,4 @@
-const todoList = [
-  {
-    name: "make dinner",
-    dueDate: "2025-03-02",
-  },
-  {
-    name: "make bfast",
-    dueDate: "2025-03-02",
-  },
-]; //array of strings
+const todoList = []; //array of strings
 
 renderTodoList();
 
@@ -37,12 +28,18 @@ function addTodo() {
   const dateInputElement = document.querySelector(".js-due-date-input");
   const dueDate = dateInputElement.value;
 
+  if (name === "" || dueDate === "") {
+    alert("Please enter a task and select a due date.");
+    return;
+  }
+
   todoList.push({
     name,
     dueDate,
   }); //adding the value to the array
   // console.log(todoList); //visible on our console (arrays)
-  inputElement.value = ""; //clear the input field
+  inputElement.value = "";
+  dateInputElement.value = ""; //clear the input field
 
   renderTodoList();
 }
