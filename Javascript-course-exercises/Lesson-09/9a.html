@@ -26,7 +26,12 @@
     </button>
     <p class="js-choices">You choose: Tails</p>
 
-    <input type="text" class="js-input" />
+    <input
+      type="text"
+      class="js-input"
+      onkeydown="getMyName();
+    "
+    />
     <button
       onclick="
       const inputElement= document.querySelector('.js-input');
@@ -35,8 +40,17 @@
       Submit
     </button>
     <p class="js-message">Your name is:</p>
+    <br /><br /><br />
 
     <script>
+      function getMyName() {
+        if (event.key === "Enter") {
+          const inputElement = document.querySelector(".js-input");
+          document.querySelector(
+            ".js-message"
+          ).innerHTML = `Your name is: ${inputElement.value}`;
+        }
+      }
       console.log(document.querySelector("button"));
 
       document.querySelector(".button-b-js").innerHTML = "9b done";

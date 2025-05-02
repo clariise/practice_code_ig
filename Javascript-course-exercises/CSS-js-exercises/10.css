@@ -1,0 +1,43 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+button {
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: black;
+  background-color: rgb(255, 216, 20);
+  border: none;
+}
+
+.button-2 {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.button-3 {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.btn-test {
+  background-color: rgb(197, 17, 17);
+  color: white;
+}
+
+.toggle-btn {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+.is-toggled {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Shipping Calculations</title>
+  </head>
+  <body>
+    <!-- calculate -->
+    <input type="number" class="js-numbers" onkeydown="handleKeydown(event);" />
+    <button
+      onclick="calculateTotal();
+      "
+    >
+      Calculate
+    </button>
+    <p class="js-results">Result:</p>
+
+    <!-- using onkeyup -->
+    <input type="text" class="js-input-msg" onkeyup="handleKeyup()" />
+    <p class="js-message"></p>
+
+    <script>
+      function handleKeyup() {
+        const inputElement = document.querySelector(".js-input-msg");
+        document.querySelector(
+          ".js-message"
+        ).innerHTML = `${inputElement.value}`;
+      }
+      function handleKeydown(event) {
+        if (event.key == "Enter") {
+          calculateTotal();
+        }
+      }
+      function calculateTotal() {
+        const inputElement = document.querySelector(".js-numbers");
+
+        let cost = Number(inputElement.value) * 100;
+        if (cost < 4000) {
+          cost = cost + 1000;
+        }
+
+        document.querySelector(".js-results").innerHTML = `Results: ${
+          cost / 100
+        }`;
+      }
+    </script>
+  </body>
+</html>
